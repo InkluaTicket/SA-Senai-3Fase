@@ -1,8 +1,7 @@
 
-<h align='center'>
 
 # InkluaTicket 🌱
-</h> 
+
 <br>
 
 <p align='center'>
@@ -11,10 +10,9 @@
 <br>
 
 
-<h align='center'> 
 
 ## O que é a InkluaTicket?
-</h>
+
  
 
 A InkluaTicket é sinônimo de empatia, diversidade e inclusão! Somos um grupo de jovens desenvolvedores com a missão de criar um espaço social verdadeiramente acessível para pessoas PCD. Nosso software garante que apenas eventos com acessibilidade sejam anunciados, promovendo uma experiência mais justa e igualitária para todos.
