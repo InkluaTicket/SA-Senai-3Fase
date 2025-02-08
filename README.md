@@ -1,10 +1,23 @@
+
+<h align='center'>
+
 # InkluaTicket 🌱
+</h> 
+<br>
 
-<img src='https://cdn1.iconfinder.com/data/icons/diversity-and-inclusion/5500/22-09-28-Diversity-_-inclusion-similars_27-256.png' width='80'/> <img src='https://cdn1.iconfinder.com/data/icons/disabled-people-care-cartoon-2/512/g26873-512.png' width='80'/> <img src='https://cdn1.iconfinder.com/data/icons/disabled-people-care-cartoon-2/512/g26869-512.png' width='80'/> <img src='https://cdn1.iconfinder.com/data/icons/disabled-people-care-cartoon-2/512/g26877-512.png' width='80'> <img src='https://institutophi.org.br/wp/wp-content/uploads/2021/11/phi_areas_acessibilidade_icone.png' width='80'/> <img src='https://cdn1.iconfinder.com/data/icons/diversity-and-inclusion/4500/22-09-28-Diversity-_-inclusion-similars_24-512.png' width='80'/> <img src='https://cdn1.iconfinder.com/data/icons/disabled-people-care-cartoon-2/512/g26878-512.png' width='80'/> <img src='https://cdn1.iconfinder.com/data/icons/disabled-people-care-cartoon-2/512/g26875-512.png' width='80'/> <img src='https://cdn1.iconfinder.com/data/icons/diversity-and-inclusion/6000/22-09-28-Diversity-_-inclusion-similars_14-512.png' width='80'/> 
+<p align='center'>
+<img src='https://institutophi.org.br/wp/wp-content/uploads/2021/11/phi_areas_acessibilidade_icone.png' width='100'/> 
+</p>
+<br>
 
-O que é a InkluaTicket?
+
+<h align='center'> 
+
+## O que é a InkluaTicket?
+</h>
+ 
+
 A InkluaTicket é sinônimo de empatia, diversidade e inclusão! Somos um grupo de jovens desenvolvedores com a missão de criar um espaço social verdadeiramente acessível para pessoas PCD. Nosso software garante que apenas eventos com acessibilidade sejam anunciados, promovendo uma experiência mais justa e igualitária para todos.
-
 
 
 ## Integragrantes da equipe:
