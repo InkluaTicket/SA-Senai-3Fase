@@ -14,11 +14,11 @@
 Esta seção tem como objetivo especificar os requisitos funcionais e não funcionais que o sistema **InkluaTicket** deve atender, fornecendo aos desenvolvedores as informações necessárias para o sistema web. Desenvolvido no **CT** de Análise e Desenvolvimento de Sistemas, o sistema **Inklua** visa buscar promover a conscientização sobre acessibilidade em eventos diversos, fornecendo ferramentas de filtragem de pesquisa e uma comunidade transparente.
 
 ## Integrantes
-[Samuel Bordignon Wiegand ]()
+[Samuel Bordignon Wiegand ](https://github.com/samuel-bordignon)
 
-[Darlan Matheus Hildebrando da Silva ]()
+[Darlan Matheus Hildebrando da Silva ](https://github.com/DarlanHildebrando)
 
-[Eduardo Henzo Freitas dos Santos]()
+[Eduardo Henzo Freitas dos Santos](https://github.com/eduardos4antos)
 
 [Jailton Costa Pereira]()
 
