@@ -15,9 +15,13 @@ Esta seção tem como objetivo especificar os requisitos funcionais e não funci
 
 ## Integrantes
 [Samuel Bordignon Wiegand ]()
+
 [Darlan Matheus Hildebrando da Silva ]()
+
 [Eduardo Henzo Freitas dos Santos]()
+
 [Jailton Costa Pereira]()
+
 [Júlia Bandeira Busch]()
 
 
