@@ -12,7 +12,7 @@ Siga-nos nas redes sociais para ficar por dentro das novidades e atualizações:
 - [gitHub](https://github.com/jailton-costa)
 - [instagram](https://www.instagram.com/jailton_costa_3/)  
 
-### 🧑‍💻 Analista de Sistemas e Desenvolvedor - eduardo santos  
+### 🧑‍💻 Analista de Sistemas e Desenvolvedor - Eduardo Santos  
 - [linkedIm](https://www.linkedin.com/in/eduardo-santos-b4894834b/)  
 - [gitHub](https://github.com/eduardos4antos)  
 - [instagram](https://www.instagram.com/001.eduardo/)  
@@ -22,7 +22,7 @@ Siga-nos nas redes sociais para ficar por dentro das novidades e atualizações:
 - [gitHub](https://github.com/samuel-bordignon)
 - [instagram](https://www.instagram.com/samuel_sem_r/)  
 
-### 🧑‍💻 Analista de Sistemas e Desenvolvedor - darlan hidelbrado
+### 🧑‍💻 Analista de Sistemas e Desenvolvedor - Darlan Hidelbrado
 - [LinkedIn](https://www.linkedin.com/in/darlan-hildebrando-7b3a44312/)  
 - [GitHub](https://github.com/DarlanHildebrando)  
 - [Instagram](https://www.instagram.com/darlan_hildebrando/)  
