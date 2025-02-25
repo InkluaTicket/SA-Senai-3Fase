@@ -1,151 +1,251 @@
 
 ![Logo do InkluaTicket](assetsReadme/Logo.svg)
 
-# Requisitos funcionais e não funcionais
+Requisitos Funcionais e Não Funcionais
 
-## Histórico de revisão
+Autores:
+- Samuel Bordignon Wiegand
+- Darlan Matheus Hildebrando da Silva
+- Eduardo Henzo Freitas dos Santos
+- Jailton Costa Pereira
+- Júlia Bandeira Busch
 
-| Data     | Versão | Descrição                                             | Autor                          |
-|----------|--------|-----------------------------------------------------|--------------------------------|
-| 19/02/25 | 1.0    | Elaboração para a análise da primeira versão do documento | Samuel Bordignon Wiegand |
+---
+
+## Histórico de Revisão
+
+| Data     | Versão | Descrição                                                      | Autor                                        |
+|----------|--------|----------------------------------------------------------------|----------------------------------------------|
+| 19/02/25 | 1.0    | Elaboração para a análise da primeira versão do documento     | Samuel Bordignon Wiegand                    |
+| 23/02/25 | 1.2    | Elaboração dos requisitos não funcionais e aprimoramento da tabela de convenções | Samuel Bordignon Wiegand |
+| 23/02/25 | 1.3    | Elaboração dos requisitos não funcionais e aprimoramento da tabela de convenções | Darlan Matheus Hildebrando da Silva |
+| 24/02/25 | 2.0    | Elaboração da tabela de responsabilidades e distribuição de tarefas da equipe    |  Samuel Bordignon Wiegand  |
+
+---
+
+## Conteúdo
+1. Introdução
+2. Convenções, Termos e Abreviações
+3. Funções da Equipe
+4. Tabela de Requisitos
+5. Requisitos Funcionais
+6. Requisitos Não Funcionais
+    - Segurança
+    - Usabilidade
+    - Acessibilidade
+    - Personalização e Experiência do Usuário
+
+---
 
 ## Introdução
+Este documento tem como objetivo especificar os requisitos funcionais e não funcionais que o sistema **InkluaTicket** deve atender, fornecendo aos desenvolvedores as informações necessárias para a construção do sistema web. Desenvolvido no contexto do curso técnico de Análise e Desenvolvimento de Sistemas, o **InkluaTicket** visa promover a conscientização sobre acessibilidade em eventos diversos, fornecendo ferramentas de filtragem de pesquisa e uma comunidade transparente.
 
-Esta seção tem como objetivo especificar os requisitos funcionais e não funcionais que o sistema **InkluaTicket** deve atender, fornecendo aos desenvolvedores as informações necessárias para o sistema web. Desenvolvido no **CT** de Análise e Desenvolvimento de Sistemas, o sistema **Inklua** visa buscar promover a conscientização sobre acessibilidade em eventos diversos, fornecendo ferramentas de filtragem de pesquisa e uma comunidade transparente.
+---
 
-## Integrantes
-[Samuel Bordignon Wiegand ](https://github.com/samuel-bordignon)
+## Convenções, Termos e Abreviações
 
-[Darlan Matheus Hildebrando da Silva ](https://github.com/DarlanHildebrando)
+| Termo/Acrônimo | Definição |
+|---------------|-----------|
+| CT           | Curso Técnico |
+| RNF          | Requisitos Não Funcionais |
+| RF           | Requisitos Funcionais |
+| Cliente, Empresa, Moderador | Perfis de usuário do sistema |
+| UX           | Experiência do Usuário |
+| UI           | Interface do Usuário |
+| ARIA         | Conjunto de atributos que melhoram a acessibilidade |
+| JWT          | Token seguro usado para autenticação |
+| Dashboard    | Interface gráfica que exibe informações de forma clara e intuitiva |
+| BCRYPT       | Algoritmo de hash para criptografia de senhas |
+| Check-list   | Lista de itens ou requisitos a serem revisados |
+| Feedback     | Resposta ou reação do sistema às ações do usuário |
 
-[Eduardo Henzo Freitas dos Santos](https://github.com/eduardos4antos)
-
-[Jailton Costa Pereira]()
-
-[Júlia Bandeira Busch]()
-
-
-## Convenções, termos e abreviações
-
-| Termos e Abreviações | Definições |
-|----------------------|------------|
-| **CT**              | Curso técnico |
-| **RNF**             | Requisitos não funcionais |
-| **RF**              | Requisitos funcionais |
-| **Cliente, Empresa e Moderador** | Atores/tipos de perfis presentes no sistema |
+---
 
 ## Requisitos Funcionais
 
-### [RF0] Cadastro de usuários
-O sistema permitirá o cadastro de usuários com informações como **email, senha e nome**.
+### [RF0] Cadastro e Login de Clientes
+- Permitir que clientes se cadastrem e façam login para gerenciar seus perfis.
+- **Atores:** Clientes
+- **Prioridade:** ☑ Essencial
 
-**Atores:** Clientes e Empresa  
-**Prioridade:** ☑ Essencial ☐ Crítica ☐ Desejável
+### [RF1] Gerenciamento de Perfil
+- Usuários poderão atualizar nome, email, senha e preferências.
+- **Atores:** Clientes e Empresas
+- **Prioridade:** ☑ Essencial
 
-### [RF1] Login de usuário
-O sistema permitirá que os usuários realizem login utilizando **email e senha**.
+### [RF2] Visualizar Eventos
+- Usuários poderão visualizar eventos disponíveis na plataforma.
+- **Atores:** Clientes e Empresas
+- **Prioridade:** ☑ Essencial
 
-**Atores:** Clientes e Empresa  
-**Prioridade:** ☑ Essencial ☐ Crítica ☐ Desejável
+### [RF3] Comprar Ingressos
+- Clientes poderão adquirir ingressos para eventos.
+- **Atores:** Clientes
+- **Prioridade:** ☑ Essencial
 
-### [RF2] Gerenciamento de perfil
-Os usuários poderão atualizar suas informações de perfil, como **nome, email, senha e preferências**.
+### [RF4] Comentar em Eventos
+- Clientes poderão comentar sobre eventos que participaram.
+- **Atores:** Clientes
+- **Prioridade:** ☑ Essencial
 
-**Atores:** Clientes e Empresa  
-**Prioridade:** ☑ Essencial ☐ Crítica ☐ Desejável
+### [RF5] Adaptação do Visual
+- Permitir a personalização da interface para acessibilidade.
+- **Atores:** Clientes e Empresas
+- **Prioridade:** ☑ Essencial
 
-### [RF3] Visualizar eventos
-Os usuários poderão visualizar eventos disponíveis na plataforma.
+### [RF6] Sistema de Recompensa
+- Criar sistema de recompensas para usuários ativos.
+- **Atores:** Clientes
+- **Prioridade:** ☑ Crítica
 
-**Atores:** Clientes e Empresa  
-**Prioridade:** ☑ Essencial ☐ Crítica ☐ Desejável
+### [RF7] Cadastro e Login de Empresa
+- Empresas poderão se cadastrar e gerenciar seus eventos.
+- **Atores:** Empresas
+- **Prioridade:** ☑ Essencial
 
-### [RF4] Comprar um ingresso para o evento
-Os clientes poderão adquirir ingressos para eventos disponíveis na plataforma.
+### [RF8] Criação e Edição de Eventos
+- Empresas poderão criar e editar eventos.
+- **Atores:** Empresas
+- **Prioridade:** ☑ Essencial
 
-**Atores:** Clientes  
-**Prioridade:** ☑ Essencial ☐ Crítica ☐ Desejável
+### [RF9] Gerenciamento de Comentários
+- Empresas poderão visualizar e responder comentários.
+- **Atores:** Empresas
+- **Prioridade:** ☑ Essencial
 
-### [RF5] Comentar no evento
-Os clientes poderão comentar sobre eventos que participaram ou possuem interesse.
+### [RF10] Criar Ingressos
+- Empresas poderão configurar tipos de ingressos e preços.
+- **Atores:** Empresas
+- **Prioridade:** ☑ Essencial
 
-**Atores:** Clientes  
-**Prioridade:** ☑ Essencial ☐ Crítica ☐ Desejável
+### [RF11] Validação de Eventos
+- Moderadores terão um check-list para validar eventos.
+- **Atores:** Moderadores
+- **Prioridade:** ☑ Essencial
 
-### [RF6] Adaptação do visual
-O sistema permitirá a personalização da interface para melhor acessibilidade.
+### [RF12] Login do Moderador
+- Moderadores terão sistema de autenticação.
+- **Atores:** Moderadores
+- **Prioridade:** ☑ Essencial
 
-**Atores:** Clientes e Empresa  
-**Prioridade:** ☑ Essencial ☐ Crítica ☐ Desejável
+### [RF13] Verificar Eventos em Análise
+- Moderadores poderão visualizar eventos pendentes.
+- **Atores:** Moderadores
+- **Prioridade:** ☑ Essencial
 
-### [RF7] Sistema de recompensa por presença no site
-O sistema oferecerá um sistema de recompensas para usuários ativos.
+### [RF14] Aprovação ou Rejeição de Eventos
+- Moderadores poderão aprovar ou negar eventos.
+- **Atores:** Moderadores
+- **Prioridade:** ☑ Essencial
 
-**Atores:** Clientes e Empresa  
-**Prioridade:** ☐ Essencial ☑ Crítica ☐ Desejável
+### [RF16] Exclusão de Comentários
+- Moderadores poderão excluir comentários inadequados.
+- **Atores:** Moderadores
+- **Prioridade:** ☑ Essencial
 
-### [RF8] Cadastro e login de empresa
-O sistema permitirá que empresas se cadastrem e façam login para gerenciar seus eventos.
+### [RF17] Verificação de Qualidade
+- Moderadores poderão conceder selo de verificação.
+- **Atores:** Moderadores
+- **Prioridade:** ☑ Crítica
 
-**Atores:** Empresa  
-**Prioridade:** ☑ Essencial ☐ Crítica ☐ Desejável
+### [RF18] Dashboard Interativo
+- Fornecer dashboard para análise de eventos.
+- **Atores:** Empresas e Moderadores
+- **Prioridade:** ☑ Crítica
 
-### [RF9] Criação e edição de eventos
-As empresas poderão criar e editar eventos, incluindo **descrição, data, local e ingressos**.
+### [RF19] Área de Ingressos
+- Interface para usuários visualizarem ingressos comprados.
+- **Atores:** Clientes
+- **Prioridade:** ☑ Essencial
 
-**Atores:** Empresa  
-**Prioridade:** ☑ Essencial ☐ Crítica ☐ Desejável
+### [RF20] Tela de Customização
+- Permitir personalização da interface com pré-visualização.
+- **Atores:** Clientes e Empresas
+- **Prioridade:** ☑ Essencial
 
-### [RF10] Visualizar e responder comentários do evento
-As empresas poderão visualizar e responder aos comentários deixados pelos clientes.
+---
 
-**Atores:** Empresa  
-**Prioridade:** ☑ Essencial ☐ Crítica ☐ Desejável
+## Requisitos Não Funcionais
 
-### [RF11] Criar ingressos
-As empresas poderão configurar tipos de ingressos e valores para seus eventos.
+### Segurança
+- [RNF0] Armazenamento seguro de senhas (bcrypt)
+- [RNF1] Autenticação utilizando JWT
+- [RNF2] Prevenção de duplicação de e-mails
+- [RNF3] Identificação do usuário por e-mail no login
 
-**Atores:** Empresa  
-**Prioridade:** ☑ Essencial ☐ Crítica ☐ Desejável
+### Usabilidade
+- [RNF5] Interface intuitiva
+- [RNF6] Facilidade de uso
 
-### [RF12] Check-list de validação do evento
-Os moderadores terão acesso a um check-list para validar eventos antes da publicação.
+### Acessibilidade
+- [RNF8] Compatibilidade com leitores de tela
+- [RNF9] Navegação por teclado
 
-**Atores:** Moderador  
-**Prioridade:** ☑ Essencial ☐ Crítica ☐ Desejável
+### Personalização e Experiência do Usuário
+- [RNF10] Personalização de cores e fontes
+- [RNF11] Personalização da interface em tempo real
+- [RNF12] Tela de customização
 
-### [RF13] Login do moderador
-Os moderadores terão um sistema de autenticação para acessar suas funções administrativas.
+---
 
-**Atores:** Moderador  
-**Prioridade:** ☑ Essencial ☐ Crítica ☐ Desejável
+## Funções da Equipe
 
-### [RF14] Verificar eventos em análise
-Os moderadores poderão visualizar uma lista de eventos pendentes de aprovação.
+## Tabela de Requisitos
 
-**Atores:** Moderador  
-**Prioridade:** ☑ Essencial ☐ Crítica ☐ Desejável
+### Requisitos Funcionais
 
-### [RF15] Aceitar ou negar eventos em análise
-Os moderadores poderão aprovar ou rejeitar eventos enviados pelas empresas.
+| Código | Responsáveis |
+|----------|--------------|
+| RF0  | Jailton Costa Pereira |
+| RF1  | Jailton Costa Pereira |
+| RF2  | Samuel Bordignon Wiegand |
+| RF3  | Darlan Matheus Hildebrando da Silva |
+| RF4  | Eduardo Henzo Freitas dos Santos |
+| RF5  | Samuel Bordignon Wiegand |
+| RF6  | Samuel Bordignon Wiegand |
+| RF7  | Jailton Costa Pereira |
+| RF8  | Júlia Bandeira Busch |
+| RF9  | Eduardo Henzo Freitas dos Santos |
+| RF10 | Darlan Matheus Hildebrando da Silva |
+| RF11 | Júlia Bandeira Busch |
+| RF12 | Jailton Costa Pereira |
+| RF13 | Samuel Bordignon Wiegand |
+| RF14 | Júlia Bandeira Busch |
+| RF16 | Eduardo Henzo Freitas dos Santos |
+| RF17 | Júlia Bandeira Busch |
+| RF18 | Júlia Bandeira Busch |
+| RF19 | Darlan Matheus Hildebrando da Silva |
+| RF20 | Samuel Bordignon Wiegand |
 
-**Atores:** Moderador  
-**Prioridade:** ☑ Essencial ☐ Crítica ☐ Desejável
+### Requisitos Não Funcionais
 
-### [RF16] Excluir comentários
-Os moderadores poderão excluir comentários considerados inadequados ou ofensivos.
+#### Segurança
 
-**Atores:** Moderador  
-**Prioridade:** ☑ Essencial ☐ Crítica ☐ Desejável
+| Código | Responsáveis |
+|----------|--------------|
+| RNF0 | Jailton Costa Pereira |
+| RNF1 | Jailton Costa Pereira |
+| RNF2 | Jailton Costa Pereira |
+| RNF3 | Jailton Costa Pereira |
 
-### [RF17] Liberação de verificação de qualidade para empresa
-Os moderadores poderão conceder um selo de verificação para empresas confiáveis.
+#### Usabilidade
 
-**Atores:** Moderador  
-**Prioridade:** ☐ Essencial ☑ Crítica ☐ Desejável
+| Código | Responsáveis |
+|----------|--------------|
+| RNF5 | Todos os envolvidos |
+| RNF6 | Todos os envolvidos |
 
-### [RF18] Dashboard interativo sobre eventos
-O sistema fornecerá um dashboard interativo para análise de eventos cadastrados.
+#### Acessibilidade
 
-**Atores:** Empresa e Moderador  
-**Prioridade:** ☐ Essencial ☑ Crítica ☐ Desejável
+| Código | Responsáveis |
+|----------|--------------|
+| RNF8 | Todos os envolvidos |
+| RNF9 | Todos os envolvidos |
+
+#### Personalização e Experiência do Usuário
+
+| Código | Responsáveis |
+|----------|--------------|
+| RNF10 | Samuel Bordignon Wiegand |
+| RNF11 | Samuel Bordignon Wiegand |
+| RNF12 | Samuel Bordignon Wiegand |
