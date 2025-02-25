@@ -11,6 +11,8 @@ Autores:
 - Júlia Bandeira Busch
 
 ---
+## Link dos protótipos das telas
+[Aqui](https://www.figma.com/design/UjMVXYvM2EpvOcKdRp1ore/INKLUA_SA?node-id=1-1042&t=Id5fooKTOz9ziUVT-1)
 
 ## Histórico de Revisão
 
@@ -38,7 +40,7 @@ Autores:
 ---
 
 ## Introdução
-Este documento tem como objetivo especificar os requisitos funcionais e não funcionais que o sistema **InkluaTicket** deve atender, fornecendo aos desenvolvedores as informações necessárias para a construção do sistema web. Desenvolvido no contexto do curso técnico de Análise e Desenvolvimento de Sistemas, o **InkluaTicket** visa promover a conscientização sobre acessibilidade em eventos diversos, fornecendo ferramentas de filtragem de pesquisa e uma comunidade transparente.
+Este documento tem como objetivo especificar os requisitos funcionais e não funcionais que o sistema **InkluaTicket** deve atender, fornecendo aos desenvolvedores as informações necessárias para a construção do sistema web. Desenvolvido no contexto do curso técnico de Análise e Desenvolvimento de Sistemas, o **InkluaTicket** visa promover a conscientização sobre acessibilidade em eventos diversos, fornecendo ferramentas de filtragem de pesquisa e uma comunidade transparente. 
 
 ---
 
@@ -57,7 +59,7 @@ Este documento tem como objetivo especificar os requisitos funcionais e não fun
 | Dashboard    | Interface gráfica que exibe informações de forma clara e intuitiva |
 | BCRYPT       | Algoritmo de hash para criptografia de senhas |
 | Check-list   | Lista de itens ou requisitos a serem revisados |
-| Feedback     | Resposta ou reação do sistema às ações do usuário |
+| Feedback     | Resposta ou reação do sistema às ações do usuário | 
 
 ---
 
