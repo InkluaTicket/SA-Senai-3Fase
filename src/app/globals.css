@@ -1,1 +1,47 @@
 @import "tailwindcss";
+
+@theme {
+    --color-cinza-principal-50: #f3f4f6;
+    --color-cinza-principal-100: #edeef1;
+    --color-cinza-principal-200: #d7dbe0;
+    --color-cinza-principal-300: #b3bbc6;
+
+    --color-roxo-pincipal-50: #f0f3fd;
+    --color-roxo-pincipal-100: #e3e8fc;
+    --color-roxo-pincipal-200: #ccd4f9;
+    --color-roxo-pincipal-300: #adb7f4;
+    --color-roxo-pincipal-400: #8c93ed;
+    --color-roxo-pincipal-500: #7170e4;
+    --color-roxo-pincipal-600: #574cd5;
+    --color-roxo-pincipal-700: #5145bd;
+    --color-roxo-pincipal-800: #423a99;
+    --color-roxo-pincipal-900: #3a357a;
+    --color-roxo-pincipal-950: #231f47;
+    
+    --color-laranja-principal-50: #fffcea;
+    --color-laranja-principal-100: #fff5c5;
+    --color-laranja-principal-200: #ffeb85;
+    --color-laranja-principal-300: #ffda46;
+    --color-laranja-principal-400: #ffc71b;
+    --color-laranja-principal-500: #ffa500;
+    --color-laranja-principal-600: #e27c00;
+    --color-laranja-principal-700: #bb5502;
+    --color-laranja-principal-800: #984208;
+    --color-laranja-principal-900: #7c360b;
+    --color-laranja-principal-950: #481a00;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root,
+body,
+html {
+    min-height: 100vh;
+    /* background-color: blue; */
+}
