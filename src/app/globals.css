@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
 @import "tailwindcss";
 
 @theme {
+    --font-principal: "Poppins", "sans-serif";
+
     --color-cinza-principal-50: #f3f4f6;
     --color-cinza-principal-100: #edeef1;
     --color-cinza-principal-200: #d7dbe0;
@@ -17,7 +21,7 @@
     --color-roxo-pincipal-800: #423a99;
     --color-roxo-pincipal-900: #3a357a;
     --color-roxo-pincipal-950: #231f47;
-    
+
     --color-laranja-principal-50: #fffcea;
     --color-laranja-principal-100: #fff5c5;
     --color-laranja-principal-200: #ffeb85;
@@ -30,12 +34,36 @@
     --color-laranja-principal-900: #7c360b;
     --color-laranja-principal-950: #481a00;
 
+    --color-azul-pincipal-50: #ebf7ff;
+    --color-azul-pincipal-100: #d2eeff;
+    --color-azul-pincipal-200: #afe3ff;
+    --color-azul-pincipal-300: #78d3ff;
+    --color-azul-pincipal-400: #38b9ff;
+    --color-azul-pincipal-500: #0b93ff;
+    --color-azul-pincipal-600: #006fff;
+    --color-azul-pincipal-700: #0056ff;
+    --color-azul-pincipal-800: #0045d4;
+    --color-azul-pincipal-900: #0241a6;
+    --color-azul-pincipal-950: #051b44;
 
+
+
+    --color-borda-input: #CDD1DB;
+}
+
+.input-crud {
+    @apply bg-white border border-borda-input rounded-lg p-2 w-full;
+}
+.label-crud {
+    @apply text-azul-pincipal-950 font-medium text-[16px] font-principal;
+}
+
+.container-input {
+    @apply flex flex-col;
 }
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
