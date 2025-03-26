@@ -35,5 +35,4 @@ Siga-nos nas redes sociais para ficar por dentro das novidades e atualizações:
 ---
 
 🔗 **Entre em contato:**  
-✉️ Email: contato@inklua.com  
-  
+✉️ Email: contato@inklua.com 
