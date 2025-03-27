@@ -1,7 +1,10 @@
 function page() {
+    //comentario
     return (
         <div className="bg-laranja-principal-500 h-screen flex font-principal">
-            <div className="bg-[#F9FAFC] w-6/12 px-35 flex items-center">
+            <div className="bg-[#F9FAFC] w-1/2 px-35 flex items-center">
+
+
                 <div className=" w-full flex flex-col gap-12">
                     <div className="">
                         <div className="flex items-center">
