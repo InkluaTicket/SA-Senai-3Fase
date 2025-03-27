@@ -60,7 +60,6 @@
 .btn-crud{
   @apply bg-roxo-principal-600  text-white text-xl font-medium rounded-lg p-2 w-full h-14 hover:bg-roxo-principal-700;
 }
-
 .container-input {
     @apply flex flex-col gap-2;
 }
