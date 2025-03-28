@@ -52,21 +52,28 @@
 }
 
 .input-crud {
-    @apply bg-white border border-borda-input rounded-lg p-4 w-full h-14 focus:outline-none ;
+    @apply bg-white border border-borda-input rounded-lg p-4 w-full h-14 2xl:h-12 focus:outline-none placeholder:text-cinza-principal-300 placeholder:text-[15px] focus:border-roxo-principal-500 focus:ring-1 focus:ring-roxo-principal-500 transition duration-200 ease-in-out;
 }
+
 .label-crud {
-    @apply text-azul-principal-950 font-medium text-[15px] font-principal ;
+    @apply text-azul-principal-950 font-medium text-[15px] 2xl:text-[12px] font-principal;
 }
-.btn-crud{
-  @apply bg-roxo-principal-600  text-white text-xl font-medium rounded-lg p-2 w-full h-14 hover:bg-roxo-principal-700;
+
+.btn-crud {
+    @apply bg-roxo-principal-600 text-white text-xl 2xl:text-[16px] font-medium rounded-lg p-2 w-full h-14 2xl:h-12 hover:bg-roxo-principal-700 cursor-pointer transition duration-200 ease-in-out;
 }
 
 .container-input {
     @apply flex flex-col gap-2;
 }
 
+/* Definindo um limite para o tamanho dos inputs e do formulário */
+.w-full.max-w-lg {
+    max-width: 450px;
+}
+
+/* Reset de margens e box-sizing */
 * {
-    margin: 0;
     box-sizing: border-box;
 }
 
@@ -74,8 +81,8 @@
 body,
 html {
     min-height: 100vh;
-    /* background-color: blue; */
 }
+
 
 
 /* NotFound.css */

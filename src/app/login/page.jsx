@@ -13,13 +13,7 @@ function Page() {
         // Validação de e-mail único (exemplo, não implementado)
         // email: z.string().email("E-mail inválido").refine(async (value) => {
         //     const response = await fetch(`/api/validar-email?email=${value}`);
-        nome: z.string().min(2, "Nome muito curto"),
-        sobrenome: z.string().min(2, "Sobrenome muito curto"),
         senha: z.string().min(6, "A senha deve ter pelo menos 6 caracteres"),
-        confirmarSenha: z.string()
-    }).refine((data) => data.senha === data.confirmarSenha, {
-        message: "As senhas não coincidem",
-        path: ["confirmarSenha"]
     })
 
     // Configuração do formulário com react-hook-form e Zod
@@ -29,7 +23,7 @@ function Page() {
 
     // Função de envio do formulário (será usada para chamar a API futuramente)
     const onSubmit = (data) => {
-        localStorage.setItem('cliente', JSON.stringify(data))
+        localStorage.setItem('cliente-login', JSON.stringify(data))
         // Aqui será feita a requisição para a API de cadastro
     }
 
@@ -42,16 +36,15 @@ function Page() {
                 </div>
 
                 {/* Formulário de cadastro */}
-                <form onSubmit={handleSubmit(onSubmit)} className="w-6/10 flex flex-col gap-10 2xl:gap-12 my-auto">
+                <form onSubmit={handleSubmit(onSubmit)} className="w-6/10 flex flex-col gap-10 2xl:gap-24            my-auto">
                     <div>
                         <div className="flex justify-start items-center">
-                            <h1 className='font-semibold text-roxo-principal-600 text-6xl 2xl:text-5xl font-principal'>
-                                Cadastre-se
+                            <h1 className='font-semibold text-roxo-principal-600 text-6xl 2xl:text-5xl font-principal flex-nowrap'>
+                                É bom te ver Novamente
                             </h1>
-                            <img src="/icons/ticket-vazado.svg" alt="Ícone de ticket" className="h-16" />
                         </div>
-                        <p className='font-principal font-medium text-[16px] 2xl:text-[14px]'>
-                            Todos merecem viver grandes eventos
+                        <p className='font-principal font-medium text-[16px]'>
+                            Seu lugar está reservado
                         </p>
                     </div>
 
@@ -63,20 +56,6 @@ function Page() {
                             {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
                         </div>
 
-                        {/* Campos de Nome e Sobrenome */}
-                        <div className="grid grid-cols-2 gap-4">
-                            <div className="container-input">
-                                <label htmlFor="nome" className='label-crud'>Nome</label>
-                                <input id="nome" type="text" className='input-crud' {...register("nome")} />
-                                {errors.nome && <p className="text-red-500 text-sm">{errors.nome.message}</p>}
-                            </div>
-                            <div className="container-input">
-                                <label htmlFor="sobrenome" className='label-crud'>Sobrenome</label>
-                                <input id="sobrenome" type="text" className='input-crud' {...register("sobrenome")} />
-                                {errors.sobrenome && <p className="text-red-500 text-sm">{errors.sobrenome.message}</p>}
-                            </div>
-                        </div>
-
                         {/* Campo de Senha */}
                         <div className="container-input">
                             <label htmlFor="senha" className='label-crud'>Senha</label>
@@ -84,20 +63,13 @@ function Page() {
                             {errors.senha && <p className="text-red-500 text-sm">{errors.senha.message}</p>}
                         </div>
 
-                        {/* Campo de Confirmação de Senha */}
-                        <div className="container-input">
-                            <label htmlFor="confirmarSenha" className='label-crud'>Confirmar Senha</label>
-                            <input id="confirmarSenha" type="password" className='input-crud' {...register("confirmarSenha")} />
-                            {errors.confirmarSenha && <p className="text-red-500 text-sm">{errors.confirmarSenha.message}</p>}
-                        </div>
-
                         {/* Botão de envio */}
                         <div className="flex flex-col justify-center items-center gap-3 mt-5">
                             <button type="submit" className='btn-crud'>
                                 Continuar
                             </button>
-                            <Link href="/login" className="text-roxo-principal-600 font-semibold text-sm cursor-pointer">
-                                Já possui uma conta?
+                            <Link href="/cadastro" className="text-roxo-principal-600 font-semibold text-sm cursor-pointer">
+                                Não possui uma conta?
                             </Link>
                         </div>
                     </div>
