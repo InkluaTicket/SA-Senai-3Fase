@@ -82,50 +82,27 @@ body,
 html {
     min-height: 100vh;
 }
+/* Estiliza a barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px;
+}
 
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
 
+::-webkit-scrollbar-thumb {
+  background: #CDD1DB;
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out;
+}
 
-/* NotFound.css */
-.container {
-    display: flex;
-    flex-direction: column;
-    border: floralwhite 1px solid;
-    border-radius: 15px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 3.5%;
-    height: 80vh;
-    background-color: #1a1a1a;
-    color: white;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #ff4a4a;
-  }
-  
-  .message {
-    font-size: 1.5rem;
-    color: floralwhite;
-    margin-top: 10px;
-  }
-  
-  .home-link {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    color: floralwhite;
-    background-color: #ff4a4a;
-    border: 1px solid floralwhite;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.3s;
-  }
-  
-  .home-link:hover {
-    background-color: #4caf50;
-  }
-  
+::-webkit-scrollbar-thumb:hover {
+  background: #babec7;
+}
+
+/* Efeito de rolagem suave */
+html {
+  scroll-behavior: smooth;
+}

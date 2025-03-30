@@ -2,19 +2,20 @@
 
 import { useForm } from "react-hook-form"
 import { z } from "zod"
+import { use, useContext } from "react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import Link from "next/link"
+import { GlobalContext } from "@/contexts/GlobalContext"
 
+// Esquema de validação com Zod
+const schema = z.object({
+    email: z.string().email("E-mail inválido"),
+    senha: z.string().min(6, "A senha deve ter pelo menos 6 caracteres"),
+})
 
 function Page() {
-    // Esquema de validação com Zod
-    const schema = z.object({
-        email: z.string().email("E-mail inválido"),
-        // Validação de e-mail único (exemplo, não implementado)
-        // email: z.string().email("E-mail inválido").refine(async (value) => {
-        //     const response = await fetch(`/api/validar-email?email=${value}`);
-        senha: z.string().min(6, "A senha deve ter pelo menos 6 caracteres"),
-    })
+
+    const {nome} = useContext(GlobalContext)
 
     // Configuração do formulário com react-hook-form e Zod
     const { register, handleSubmit, formState: { errors } } = useForm({
