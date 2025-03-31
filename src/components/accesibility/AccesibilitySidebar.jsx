@@ -1,16 +1,20 @@
-import React, { useContext } from 'react'
+'use client'
+
+import { useContext } from 'react'
 import OutButton from './OutButton'
 import Option from './Option'
+import { GlobalContext } from '@/contexts/GlobalContext'
+import SelectAccebility from './SelectAccebility'
 
 export default function AccesibilitySidebar() {
 
-    const { toggleSetting } = useContext(GlobalContext)
+    const { toggleSetting, readSettings, colorsSettings, navSettings } = useContext(GlobalContext)
 
     return (
-        <div className='w-6/18 h-screen bg-white absolute top-0 left-0 flex flex-col'>
+        <div className='w-6/18 2xl:w-5/18 h-screen bg-white absolute top-0 left-0 flex flex-col'>
             <div className="bg-roxo-principal-600 w-full flex justify-between items-center p-4 pl-6 ">
                 <p className='text-white text-[18px]'>
-                Preferências
+                    Preferências
                 </p>
                 <OutButton />
             </div>
@@ -18,33 +22,31 @@ export default function AccesibilitySidebar() {
                 <div className="flex flex-col gap-6">
                     <p className='text-azul-principal-950 font-medium text-[18px]'>Leitura e Texto</p>
                     <div className="grid grid-cols-2 gap-3">
-                        <Option onClick={toggleSetting} value={'monochrome'} icon={'TamanhoTexto.svg'} title={'Tamanho do Texto'}/>
-                        <Option onClick={toggleSetting} value={'monochrome'} icon={'AlturaLetra.svg'} title={'Altura da Linha'}/>
-                        <Option onClick={toggleSetting} value={'monochrome'} icon={'EspacamentoLetra.svg'} title={'Espaçamento entre Letras'}/>
-                        <Option onClick={toggleSetting} value={'monochrome'} icon={'FonteDislexa.svg'} title={'Fonte para Dislexa'}/>
-                        <Option onClick={toggleSetting} value={'monochrome'} icon={'CabecalhosDestaque.svg'} title={'Cabeçalhos Destacados'}/>
+                        {readSettings.map((setting) => (
+                            <Option key={setting.idSetting} onClick={toggleSetting} value={setting.idSetting} icon={setting.isActive ? setting.iconInvert : setting.icon} title={setting.title} />
+                        ))}
                     </div>
                     <hr className='text-[#CDD1DB] border-1' />
                 </div>
                 <div className="flex flex-col gap-6">
                     <p className='text-azul-principal-950 font-medium text-[18px]'>Leitura e Texto</p>
                     <div className="grid grid-cols-2 gap-3">
-                        <Option onClick={toggleSetting} value={'monochrome'} icon={'TamanhoTexto.svg'} title={'Tamanho do Texto'}/>
-                        <Option onClick={toggleSetting} value={'monochrome'} icon={'TamanhoTexto.svg'} title={'Tamanho do Texto'}/>
-                        <Option onClick={toggleSetting} value={'monochrome'} icon={'TamanhoTexto.svg'} title={'Tamanho do Texto'}/>
-                        <Option onClick={toggleSetting} value={'monochrome'} icon={'TamanhoTexto.svg'} title={'Tamanho do Texto'}/>
-                        <Option onClick={toggleSetting} value={'monochrome'} icon={'TamanhoTexto.svg'} title={'Tamanho do Texto'}/>
+                        {colorsSettings.map((setting) => {
+                            if(setting.idSetting === 'colorBlindness') {
+                                return <SelectAccebility onChange={console.log('oi')} key={setting.idSetting} />
+                            }else{
+                                return <Option key={setting.idSetting} onClick={toggleSetting} value={setting.idSetting} icon={setting.isActive ? setting.iconInvert : setting.icon} title={setting.title} />
+                            }
+                        })}
                     </div>
                     <hr className='text-[#CDD1DB] border-1' />
                 </div>
                 <div className="flex flex-col gap-6">
                     <p className='text-azul-principal-950 font-medium text-[18px]'>Leitura e Texto</p>
                     <div className="grid grid-cols-2 gap-3">
-                        <Option onClick={toggleSetting} value={'monochrome'} icon={'TamanhoTexto.svg'} title={'Tamanho do Texto'}/>
-                        <Option onClick={toggleSetting} value={'monochrome'} icon={'TamanhoTexto.svg'} title={'Tamanho do Texto'}/>
-                        <Option onClick={toggleSetting} value={'monochrome'} icon={'TamanhoTexto.svg'} title={'Tamanho do Texto'}/>
-                        <Option onClick={toggleSetting} value={'monochrome'} icon={'TamanhoTexto.svg'} title={'Tamanho do Texto'}/>
-                        <Option onClick={toggleSetting} value={'monochrome'} icon={'TamanhoTexto.svg'} title={'Tamanho do Texto'}/>
+                        {navSettings.map((setting) => (
+                            <Option key={setting.idSetting} onClick={toggleSetting} value={setting.idSetting} icon={setting.isActive ? setting.iconInvert : setting.icon} title={setting.title} />
+                        ))}
                     </div>
                     <hr className='text-[#CDD1DB] border-1' />
                 </div>
