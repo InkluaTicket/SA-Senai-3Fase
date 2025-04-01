@@ -70,6 +70,7 @@
 /* Definindo um limite para o tamanho dos inputs e do formulário */
 .w-full.max-w-lg {
     max-width: 450px;
+    
 }
 
 /* Reset de margens e box-sizing */

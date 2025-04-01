@@ -26,6 +26,7 @@ export const GlobalContextProvider = ({ children }) => {
       title: "Filtros para Daltonismo",
       idSetting: "colorBlindness",
       options: [
+        { label: "Nenhum", value: null },
         { label: "Protanopia", value: "protanopia" },
         { label: "Deuteranopia", value: "deuteranopia" },
         { label: "Tritanopia", value: "tritanopia" }
