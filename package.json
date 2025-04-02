@@ -18,12 +18,8 @@
     "postcss": "^8.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-<<<<<<< HEAD
-    "react-hook-form": "^7.55.0",
-=======
     "react-draggable": "^4.4.6",
     "react-hook-form": "^7.54.2",
->>>>>>> aa2d84c88c991c59fca7d4c7808acb61f51cf13f
     "react-select": "^5.10.1",
     "tailwindcss": "^4.0.14",
     "zod": "^3.24.2"
