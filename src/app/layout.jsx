@@ -7,7 +7,6 @@ export default function RootLayout({ children }) {
     <html lang="pt-br">
       <body className='bg-cinza-principal-50 2xl font-principal'>
         <GlobalContextProvider>
-          <AccesibilitySidebar />
         {children}
         </GlobalContextProvider>
       </body>
