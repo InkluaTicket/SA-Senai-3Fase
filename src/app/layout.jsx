@@ -1,13 +1,14 @@
 import { GlobalContextProvider } from "@/contexts/GlobalContext";
 import "./globals.css";
 import AccesibilitySidebar from "@/components/accesibility/AccesibilitySidebar";
+import PaidTickets from "@/components/formTickets/PaidTickets";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body className='bg-cinza-principal-50 2xl font-principal'>
         <GlobalContextProvider>
-          <AccesibilitySidebar />
+          <AccesibilitySidebar/>
         {children}
         </GlobalContextProvider>
       </body>
