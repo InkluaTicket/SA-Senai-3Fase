@@ -38,19 +38,19 @@ function Page() {
             {/* Container do formulário */}
             <div className="bg-[#F9FAFC] w-1/2 flex flex-col items-center p-6">
                 <div className="w-full flex justify-start items-center">
-                    <img src="/icons/out_icon.svg" alt="Ícone de saída" className="h-8 2xl:h-7 cursor-pointer" />
+                    <img src="/icons/out_icon.svg" alt="Ícone de saída" className="h-6 2xl:h-7 cursor-pointer" />
                 </div>
 
                 {/* Formulário de cadastro */}
                 <form onSubmit={handleSubmit(onSubmit)} className="w-6/10 flex flex-col gap-10 2xl:gap-12 my-auto">
                     <div>
                         <div className="flex justify-start items-center">
-                            <h1 className='font-semibold text-roxo-principal-600 text-6xl 2xl:text-5xl font-principal'>
+                            <h1 className='font-semibold text-roxo-principal-600 text-4xl 2xl:text-6xl font-principal'>
                                 Cadastre-se
                             </h1>
                             <img src="/icons/ticket-vazado.svg" alt="Ícone de ticket" className="h-16" />
                         </div>
-                        <p className='font-principal font-medium text-[16px] 2xl:text-[14px]'>
+                        <p className='font-principal font-medium text-[14px] 2xl:text-[16px]'>
                             Todos merecem viver grandes eventos
                         </p>
                     </div>
@@ -96,7 +96,7 @@ function Page() {
                             <button type="submit" className='btn-crud'>
                                 Continuar
                             </button>
-                            <Link href="/login" className="text-roxo-principal-600 font-semibold text-sm cursor-pointer">
+                            <Link href="/login" className="text-roxo-principal-600 font-semibold text-sm 2xl:text-base cursor-pointer">
                                 Já possui uma conta?
                             </Link>
                         </div>
@@ -105,11 +105,11 @@ function Page() {
             </div>
 
             {/* Seção da imagem lateral */}
-            <div className="flex flex-col justify-start items-center px-6 py-11 gap-16 w-1/2">
-                <div className="w-full flex justify-end">
-                    <img src="/icons/logo-icon-roxo.svg" alt="Logo" className='h-6' />
+            <div className="flex flex-col justify-start items-center px-6 py-11 w-1/2">
+                <div className="w-full h-1/16 flex justify-end">
+                    <img src="/icons/logo-icon-roxo.svg" alt="Logo" className='h-4 2xl:h-6' />
                 </div>
-                <div className="flex-grow">
+                <div className="flex justify-center items-center w-4/5  h-15/16">
                     <img src="/mulher-vazado.svg" alt="Imagem de mulher" className='w-full' />
                 </div>
             </div>

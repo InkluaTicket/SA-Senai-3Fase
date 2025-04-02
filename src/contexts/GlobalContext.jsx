@@ -8,6 +8,8 @@ export const GlobalContext = createContext()
 
 export const GlobalContextProvider = ({ children }) => {
 
+  const [sidebarActive, setSidebarActive] = useState(false)
+
   const [readSettings, setReadSettings] = useState([
     {title: 'Tamanho do Texto', idSetting: 'textSize', icon: 'TamanhoTexto.svg', iconInvert: 'TamanhoTextoBranco.svg', isActive: false},
     {title: 'Altura da Linha', idSetting: 'lineHeight', icon: 'AlturaLetra.svg', iconInvert: 'AlturaLetraBranco.svg', isActive: false},
@@ -60,7 +62,8 @@ export const GlobalContextProvider = ({ children }) => {
       toggleSetting,
       readSettings,
       colorsSettings,
-      navSettings
+      navSettings,
+      sidebarActive, setSidebarActive,
     }}>
       {children}
     </GlobalContext.Provider>

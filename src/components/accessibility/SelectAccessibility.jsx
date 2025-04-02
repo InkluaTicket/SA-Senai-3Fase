@@ -13,10 +13,10 @@ export default function SelectAccebility({ onChange }) {
             ...styles,
             backgroundColor: "#fff",
             border: "2px solid #CDD1DB",
-            borderRadius: "16px",
+            borderRadius: "12px",
             height: "56px",
             padding: "16x",
-            fontSize: "14px",
+            fontSize: "15px",
             fontWeight: "500",
             color: "#051b44",
             boxShadow: "none",
@@ -28,7 +28,7 @@ export default function SelectAccebility({ onChange }) {
         dropdownIndicator: (styles) => ({
             ...styles,
             color: "#051b44",
-            fontSize: "240px",
+            fontSize: "15px",
         }),
         menu: (styles) => ({
             ...styles,
@@ -41,7 +41,7 @@ export default function SelectAccebility({ onChange }) {
             ...styles,
             backgroundColor: isFocused ? "#E5E7EB" : "transparent",
             color: "#051b44",
-            fontSize: "14px",
+            fontSize: "15px",
             cursor: "pointer",
             "&:hover": {
                 backgroundColor: "#E5E7EB",
@@ -50,15 +50,15 @@ export default function SelectAccebility({ onChange }) {
         selectContainer: (styles) => ({
             ...styles,
             width: "100%",
-            fontSize: "140px",
+            fontSize: "15px",
             color: "#051b44",
         }),
         placeholder: (styles) => ({
             ...styles,
             padding: "8px",
-            fontSize: "14px",
+            fontSize: "15px",
             fontWeight: "500",
-            color: "#051b44",
+            color: "#717582",
         }),
         input: (styles) => ({
             ...styles,
@@ -67,21 +67,24 @@ export default function SelectAccebility({ onChange }) {
         singleValue: (styles) => ({
             ...styles,
             color: "#051b44",
-            fontSize: "14px",
+            fontSize: "15px",
             fontWeight: "500",
-            
+
         }),
     }
 
 
     return (
-        <Select
-            instanceId="select-accebility"
-            className=".select-accebility"
-            styles={customStyles}
-            options={filtrosDaltonismo?.options || []}
-            onChange={onChange}
-            placeholder="Filtros Para Daltonismo"
-        />
+        <div className="col-span-2 text-[15px] text-azul-principal-950 font-medium flex flex-col gap-3 my-2">
+            <label htmlFor="">Filtros Para Daltonismo</label>
+            <Select
+                instanceId="select-accebility"
+                className="col-span-2"
+                styles={customStyles}
+                options={filtrosDaltonismo?.options || []}
+                onChange={onChange}
+                placeholder="Filtros Para Daltonismo"
+            />
+        </div>
     )
 }
