@@ -4,7 +4,7 @@ import { useContext } from 'react'
 import OutButton from './OutButton'
 import Option from './Option'
 import { GlobalContext } from '@/contexts/GlobalContext'
-import SelectAccebility from './SelectAccebility'
+import SelectAccebility from './SelectAccessibility'
 
 export default function AccesibilitySidebar() {
 

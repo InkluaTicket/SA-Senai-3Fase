@@ -8,6 +8,8 @@ export const GlobalContext = createContext()
 
 export const GlobalContextProvider = ({ children }) => {
 
+  const [sidebarActive, setSidebarActive] = useState(false)
+
   const [readSettings, setReadSettings] = useState([
     {title: 'Tamanho do Texto', idSetting: 'textSize', icon: 'TamanhoTexto.svg', iconInvert: 'TamanhoTextoBranco.svg', isActive: false},
     {title: 'Altura da Linha', idSetting: 'lineHeight', icon: 'AlturaLetra.svg', iconInvert: 'AlturaLetraBranco.svg', isActive: false},
@@ -26,6 +28,7 @@ export const GlobalContextProvider = ({ children }) => {
       title: "Filtros para Daltonismo",
       idSetting: "colorBlindness",
       options: [
+        { label: "Nenhum", value: null },
         { label: "Protanopia", value: "protanopia" },
         { label: "Deuteranopia", value: "deuteranopia" },
         { label: "Tritanopia", value: "tritanopia" }
@@ -59,7 +62,8 @@ export const GlobalContextProvider = ({ children }) => {
       toggleSetting,
       readSettings,
       colorsSettings,
-      navSettings
+      navSettings,
+      sidebarActive, setSidebarActive,
     }}>
       {children}
     </GlobalContext.Provider>
