@@ -29,17 +29,17 @@ export default function PaidTickets() {
 
                     <div className="">
 
-                      <div className="">
-                        
-                        <input type="text" name="" id="" />
+                        <div className="">
 
-                      </div>
+                            <input type="text" name="" id="" />
 
-                      <div className="">
+                        </div>
 
-                       <input type="text" name="" id="" />
-                         
-                      </div>
+                        <div className="">
+
+                            <input type="text" name="" id="" />
+
+                        </div>
 
                     </div>
 

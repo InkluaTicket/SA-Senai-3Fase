@@ -14,7 +14,7 @@ export default function Option({ title, icon, onClick, value }) {
             onClick={() => onClick(value)}
         >
             <div className={`${isActive ? 'bg-laranja-principal-500' : 'bg-[#F4F5F7]'} rounded-full w-12 h-12 flex justify-center items-center`}>
-                <img src={`/icons/${icon}`} alt="" className="w-7" />
+                <img src={`/icons/${icon}`} alt="" className="w-7" draggable={false}    />
             </div>
             <p className={`text-[14px] font-medium ${isActive ? 'text-laranja-principal-500' : 'text-azul-principal-950'} text-start`}>{title}</p>
         </button>
