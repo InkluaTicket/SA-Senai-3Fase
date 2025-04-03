@@ -21,7 +21,7 @@ function LayoutContent({ children }) {
   return (
     <html lang="pt-br">
       <body className="bg-cinza-principal-50 2xl font-principal">
-       
+        <ToggleAccesibility />
         {sidebarActive && <AccesibilitySidebar />}
         {children}
       </body>
